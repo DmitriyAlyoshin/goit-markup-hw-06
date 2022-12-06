@@ -723,6 +723,7 @@ button {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
   place-items: center;
+  margin-top: 20px;
 }
 
 .page-footer .list-networks .icon-item {
@@ -751,6 +752,23 @@ button {
 .page-footer .networks .icon-item:hover,
 .page-footer .networks .icon-item:focus {
   background-color: var(--accent-color);
+}
+
+/* -----Footer subscribe!----- */
+
+.page-footer .subscribe {
+  padding-top: 12px;
+  margin-left: auto;
+}
+
+.page-footer .subscribe .title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
 }
 
 /* -----Modal window----- */
