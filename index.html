@@ -411,8 +411,24 @@
             <div class="subscribe">
                 <b class="title">Підпишіться на розсилку</b>
 
-                <form action="">
-                    <input type="text">
+                <form class="form">
+                    <div class="subscribe-form-field">
+
+                        <input 
+                        type="email" 
+                        class="form-input" 
+                        name="mail" 
+                        id="mail" 
+                        placeholder=" "
+                        />
+                        <label for="mail" class="form-label">E-mail</label>
+
+                        <button type="submit" class="button button-submit">
+                            <svg class="icon-btn-subscribe" width="24" height="24">
+                                <use href="./images/icons.svg#icon-paperplane"></use>
+                            </svg>
+                            Підписатися</button>
+                    </div>
                 </form>
             </div>
 
