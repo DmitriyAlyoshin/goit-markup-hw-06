@@ -927,6 +927,10 @@ button {
   text-align: center;
 }
 
+.modal .form {
+  display: block;
+}
+
 .modal .form .modal-field {
   display: block;
 }
@@ -955,7 +959,7 @@ button {
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none;  
+  outline: none;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -985,7 +989,7 @@ button {
   margin-bottom: 4px;
 
   display: block;
-  color: var(--primary-color);  
+  color: var(--primary-color);
 }
 
 .modal .form .modal-textarea {
@@ -1018,7 +1022,53 @@ button {
   letter-spacing: 0.01em;
 }
 
+.modal-checkbox-group {
+  /* position: relative; */
+  margin-top: 15px;
+}
+
+.modal .form .modal-checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--primary-color);
+
+  display: flex;
+  align-items: center;  
+}
+
+.modal .form .modal-checkbox-rules {
+  display: block;
+  margin-left: 0.4em;
+  line-height: 0.7;
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.modal .form .modal-checkbox-label::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-and-btn-color);
+  border-radius: 2px; 
+  margin-left: 15px;
+  margin-right: 8px;  
+}
+
+.modal-checkbox:checked + .modal-checkbox-label::before {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url('../images/check-min.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .modal .form .button-submit {
   padding-left: 0;
   text-align: center;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }
