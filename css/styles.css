@@ -811,7 +811,8 @@ button {
   top: 50%;
   transform: translate(0, -50%);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe .form-input {
@@ -830,6 +831,7 @@ button {
 
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
+  color: var(--primary-white-color);
   transform: translate(-75px, -50%);
 }
 
@@ -936,6 +938,9 @@ button {
 }
 
 .modal .form .modal-label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
   color: var(--primary-color);
   font-size: 12px;
   line-height: 1.17;
@@ -943,9 +948,7 @@ button {
 }
 
 .modal .form .modal-field .form-input {
-  position: relative;
-  margin-top: 4px;
-  margin-bottom: 10px;
+  position: relative; 
 }
 
 .modal .form .modal-input {
@@ -968,7 +971,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(15px, 50%);
+  transform: translate(15px, 55%);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -1024,7 +1027,7 @@ button {
 
 .modal-checkbox-group {
   /* position: relative; */
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .modal .form .modal-checkbox-label {
